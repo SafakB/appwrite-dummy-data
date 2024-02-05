@@ -15,7 +15,7 @@ let database = new Databases(client);
 const count = 250000;
 
 for (let i = 0; i < count; i++) {
-    let dummyData2 =
+    let dummyData =
     {
         title: "Example Name " + i,
         description: "Example Description" + i,
@@ -24,7 +24,7 @@ for (let i = 0; i < count; i++) {
     };
 
     // Create a new document to the collection
-    database.createDocument('65ba4d642a413bcc21f6', '65bc11b2be70c218fc9e', 'unique()', dummyData2)
+    database.createDocument('65ba4d642a413bcc21f6', '65bc11b2be70c218fc9e', 'unique()', dummyData)
         .then(response => console.log(response))
         .catch(error => console.error(error));
     /* wait delay */
