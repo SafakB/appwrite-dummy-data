@@ -1,4 +1,4 @@
-# Welcome to StackEdit!
+# Appwrite Dummy Data
 
 This package allows you to automatically add **millions** of data data to Appwrite. It is not ultra-fast, it inserts like real data.
 
@@ -17,7 +17,10 @@ docker-compose up -d
   ```
 
 
-### Setup your client parameters
+### Setup your client
+
+You should enter your endpoint and project IDs according to your own server information
+
 ```js
 client
     .setEndpoint('https://localhost/v1') // Appwrite server endpoint
@@ -25,14 +28,14 @@ client
   ```
 
 
-### You can specify how many records to add
-
+### Record Count
+You can specify how many records to add
 ```js
 const  count  =  250000;
 ```
 
-###  Remember to set your data schema inside the loop. You should set it according to your own collection
-  
+###  Schema
+Remember to set your data schema inside the loop. You should set it according to your own collection
  
  ```js
  ...
@@ -46,8 +49,8 @@ let dummyData =
 ...
 ```
  
-### And finally add your databaseId and collectionId information here
-
+### Finally edit
+And finally add your databaseId and collectionId information here
 
  ```js
  ...
